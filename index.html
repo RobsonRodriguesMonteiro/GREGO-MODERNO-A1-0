@@ -84,56 +84,33 @@
             letter-spacing: -.02em;
         }/* ===== Padrões gregos ===== *//* Meandro (Greek key) — dourado luminoso */
 
-        .meander-top, .meander-bottom {
-            height: 12px;
-            width: 100%;
-            background-image: url("data:image/svg+xml;utf8,
-            
-        <svg xmlns='http://www.w3.org/2000/svg' width='48' height='14' viewBox='0 0 48 14'>
-            <g fill='none' stroke='%232563eb' stroke-width='1.4' opacity='0.4'>
-                <path d='M0 13 H6 V4 H18 V10 H12 V8 M18 4 H24 V13 M24 1 H42 V13'/>
-            </g>
-        </svg>
-        ");
-          background-repeat:repeat-x; background-size:auto 12px;
-        }
-        .meander-bottom{ transform:scaleY(-1); }
-        .col-line{ width:14px; background-image:url("data:image/svg+xml;utf8,
-        
-        <svg xmlns='http://www.w3.org/2000/svg' width='14' height='48' viewBox='0 0 14 48'>
-            <g fill='none' stroke='%230ea5a0' stroke-width='1.4' opacity='0.45'>
-                <path d='M13 0 V6 H4 V18 H10 V12 H8 M4 18 V24 H13 M1 24 V42 H13'/>
-            </g>
-        </svg>
-        "); background-repeat:repeat-y; }
-        /* Kyma — onda corrente (Vitruvian wave), bem discreta */
-        .kyma{ height:16px; width:100%; background-repeat:repeat-x; background-size:auto 16px; opacity:.55;
-          background-image:url("data:image/svg+xml;utf8,
-        
-        <svg xmlns='http://www.w3.org/2000/svg' width='60' height='18' viewBox='0 0 60 18'>
-            <path d='M2 16 C2 4 18 4 18 12 C18 18 8 18 10 11 M32 16 C32 4 48 4 48 12 C48 18 38 18 40 11' fill='none' stroke='%232563eb' stroke-width='1.4' opacity='0.45'/>
-        </svg>
-        "); }
-        .eggdart{ height:16px; width:100%; background-repeat:repeat-x; background-size:auto 16px; opacity:.45;
-          background-image:url("data:image/svg+xml;utf8,
-        
-        <svg xmlns='http://www.w3.org/2000/svg' width='40' height='16' viewBox='0 0 40 16'>
-            <g fill='none' stroke='%2310b8a6' stroke-width='1.3' opacity='0.6'>
-                <ellipse cx='10' cy='8' rx='6' ry='5'/>
-                <path d='M19 2 L21 8 L19 14'/>
-                <ellipse cx='30' cy='8' rx='6' ry='5'/>
-            </g>
-        </svg>
-        "); }
-        /* Textura grega muito sutil para o vidro */
-        .tex-cross{ background-image:url("data:image/svg+xml;utf8,
-        
-        <svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'>
-            <g fill='none' stroke='%232563eb' stroke-width='1' opacity='0.05'>
-                <path d='M20 12 V28 M12 20 H28'/>
-            </g>
-        </svg>
-        "); }
+.meander-top, .meander-bottom {
+    height: 12px;
+    width: 100%;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='14' viewBox='0 0 48 14'><g fill='none' stroke='%232563eb' stroke-width='1.4' opacity='0.4'><path d='M0 13 H6 V4 H18 V10 H12 V8 M18 4 H24 V13 M24 1 H42 V13'/></g></svg>");
+    background-repeat: repeat-x; 
+    background-size: auto 12px;
+}
+
+.col-line { 
+    width: 14px; 
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='48' viewBox='0 0 14 48'><g fill='none' stroke='%230ea5a0' stroke-width='1.4' opacity='0.45'><path d='M13 0 V6 H4 V18 H10 V12 H8 M4 18 V24 H13 M1 24 V42 H13'/></g></svg>"); 
+    background-repeat: repeat-y; 
+}
+
+.kyma { 
+    height: 16px; width: 100%; background-repeat: repeat-x; background-size: auto 16px; opacity: .55;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='18' viewBox='0 0 60 18'><path d='M2 16 C2 4 18 4 18 12 C18 18 8 18 10 11 M32 16 C32 4 48 4 48 12 C48 18 38 18 40 11' fill='none' stroke='%232563eb' stroke-width='1.4' opacity='0.45'/></svg>"); 
+}
+
+.eggdart { 
+    height: 16px; width: 100%; background-repeat: repeat-x; background-size: auto 16px; opacity: .45;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='16' viewBox='0 0 40 16'><g fill='none' stroke='%2310b8a6' stroke-width='1.3' opacity='0.6'><ellipse cx='10' cy='8' rx='6' ry='5'/><path d='M19 2 L21 8 L19 14'/><ellipse cx='30' cy='8' rx='6' ry='5'/></g></svg>"); 
+}
+
+.tex-cross { 
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'><g fill='none' stroke='%232563eb' stroke-width='1' opacity='0.05'><path d='M20 12 V28 M12 20 H28'/></g></svg>"); 
+}
         @keyframes fadeIn{ from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:translateY(0);} }
         .animate-fade-in{ animation:fadeIn .4s ease-out forwards; }
         /* ===== Tiles / cards ===== */
